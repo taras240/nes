@@ -32,7 +32,7 @@
       //   }
       window.onload = () => {
         let game = new URL(window.location).searchParams.get("game");
-        let romLocation = `/src/roms/${game}`;
+        let romLocation = `src/roms/${game}`;
         console.log(romLocation);
         nes_load_url("nes-canvas", romLocation);
         console.log(new URL(window.location).searchParams.get("game"));
