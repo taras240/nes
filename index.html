@@ -6,31 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <script></script>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="src/css/style.css" />
     <title>Денді</title>
   </head>
   <body>
-    <ul>
-      <li>
-        <a
-          onclick="selectGame(this)"
-          romLocation="/src/roms/Battle City.nes"
-          href="play.html?game=Battle City.nes"
-          >Battle City</a
-        >
-      </li>
-      <li>
-        <a
-          onclick="selectGame(this)"
-          romLocation="/src/roms/Bomberman.nes"
-          href="play.html?game=Bomberman.nes"
-          >Bomberman</a
-        >
-      </li>
-      <li><a href="play.html?game=Bomberman.nes">PLAY</a></li>
-      <li><a href=""></a></li>
-      <li><a href=""></a></li>
-      <li><a href=""></a></li>
-    </ul>
+    <div id="game"></div>
+    <div class="wrapper">
+      <section class="header__section">
+        <header><h1>h</h1></header>
+      </section>
+      <section class="main__section">
+        <main class="main__container">
+          <ul id="roms-list">
+            <li class="rom-element">
+              <img  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRACGDyjznzAuAHDhKtxB0jM7ySsPwDjDvXGg&usqp=CAU" alt="rom-preview" class="rom__preview">
+              <div class="rom__description">
+                <p class="rom__name">Super Mario Bros.2</p>
+                <p class="rom__platform">Nes</p>
+                <p class="rom__genre">platformer</p>
+
+              </div>
+            </li>
+          </ul>
+        </main>
+      </section>
+      <section class="footer__section">
+        <footer>f</footer>
+      </section>
+    </div>
+
+
+
+    <script src="/src/script.js"></script>
   </body>
 </html>
